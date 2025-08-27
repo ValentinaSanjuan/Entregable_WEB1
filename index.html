@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style></style>
 
 </head>
 <body>
     <header>
         <div class="container headerContainer">
             <h1 class="logo">Mi<span>Portfolio</span></h1>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            
+            <label for="menu-toggle" class="menu-toggle">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menu" style="width: 30px; height: 30px; filter: invert(1);">
+            </label>
             <nav>
                 <ul>
-                    <li><a href="#sobreMi">Sobre mí</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#intereses">Intereses</a></li>
-                    <li><a href="#educacion">Educación</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sobreMi"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Usuario" class="icon">Sobre mí</a></li>
+                    <li><a href="#habilidades"><img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Código" class="icon">Habilidades</a></li>
+                    <li><a href="#intereses"><img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Intereses" class="icon">Intereses</a></li>
+                    <li><a href="#educacion"><img src="https://cdn-icons-png.flaticon.com/128/3781/3781948.png" alt="Educación" class="icon">Educación</a></li>
+                    <li><a href="#contacto"><img src="https://cdn-icons-png.flaticon.com/128/5899/5899770.png" alt="Contacto" class="icon">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,10 +32,11 @@
     <main>
         <section class="fotico">
         <div class="container foticoContainer">
-            <img src="" alt="Mi foto" class="fotico-img">
+            <div id="atras"></div>
+            <img src="/img/IMG_20250826_142827.jpg" alt="Mi foto" class="fotico-img">
             <h1>Hola, soy <span style="color: var(--secondary)">Valentina Sanjuan</span></h1>
-            <p>Estudiante de Ingeniería de Sistemas</p>
-            <a href="#contacto" class="btn">Contáctame</a>
+            <p><img src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png" alt="Laptop" class="icon">Estudiante de Ingeniería de Sistemas || 19 años</p>
+            <a href="#contacto" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/3682/3682321.png" alt="Enviar" class="icon">Contáctame</a>
         </div>
     </section>
 
@@ -39,7 +46,7 @@
             <div class="containerSobreMi">
                 
                 <div class="txtSobreMi">
-                    <h2>Sobre mí</h2>
+                    <h2><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Sobre mí" class="icon-mediano">Sobre mí</h2>
                     <p>Soy una persona apasionada por la programación y la tecnología, siempre con ganas de aprender y enfrentar nuevos retos. Me interesa especialmente el desarrollo de software y la programación orientada a objetos, aunque también estoy explorando el área del desarrollo web, donde disfruto ver cómo las ideas toman forma en la pantalla.</p>
                     <p>Me considero alguien perseverante, organizada y curiosa, cualidades que me impulsan a seguir mejorando cada día. Me gusta mantenerme al tanto de las tendencias tecnológicas y buscar cómo aplicarlas en contextos prácticos.</p>
                     <p>Mi objetivo es seguir creciendo como profesional, adquirir experiencia en distintos campos de la ingeniería de sistemas y, en el futuro, contribuir con soluciones tecnológicas que generen un impacto positivo.</p>
@@ -49,7 +56,7 @@
                 </div>
                     
                 <div class="imgSobreMi">
-                    <img src="https://www.infobae.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-wordpress-client-uploads%2Finfobae-wp%2Fwp-content%2Fuploads%2F2018%2F04%2F05224407%2Fnota-totoro-1.jpeg?auth=288a14bf77d94d51ebbe459496a1242075b89818d1791ed9daa378bb9a6dff33&smart=true&width=1200&height=675&quality=85" alt="">
+                    <img src="/img/IMG_20250826_211754.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -59,20 +66,20 @@
      <!-- Habilidades -->
     <section id="habilidades" class="habilidades">
         <div class="container">
-            <h2>Mis Habilidades</h2>
+            <h2><img src="https://cdn-icons-png.flaticon.com/512/2010/2010990.png" alt="Habilidades" class="icon-mediano">Mis Habilidades</h2>
             <div class="containerHabilidades">
                 <div class="habilidad">
-                    <i></i>
+                    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="icon-grande">
                     <h3>Java</h3>
                     <p>Manejo de conceptos de programación orientada a objetos, estructuras de datos y lógica de programación.</p>
                 </div>
                 <div class="habilidad">
-                    <i ></i>
+                    <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++" class="icon-grande">
                     <h3>C++</h3>
                     <p>Conocimientos en programación estructurada y orientada a objetos, uso de punteros y manejo de memoria.</p>
                 </div>
                 <div class="habilidad">
-                    <i ></i>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="HTML CSS" class="icon-grande">
                     <h3>HTML y CSS</h3>
                     <p>Actualmente en proceso de aprendizaje, enfocada en el diseño y la creación de interfaces web sencillas y responsivas.</p>
                 </div>
@@ -83,26 +90,26 @@
     <!-- intereses -->
     <section id="intereses" class="intereses">
         <div class="container">
-            <h2>Mis Intereses</h2>
+            <h2><img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" alt="Intereses" class="icon-mediano">Mis Intereses</h2>
             <div class="intereses-grid">
                 <div class="intereses">
                     <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Proyecto 1" class="imgInteres">
                     <div class="infoInteres">
-                        <h3>Desarrollo web</h3>
+                        <h3><img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Web" class="icon-mediano">Desarrollo web</h3>
                         <p>Aprender y aplicar HTML, CSS y posteriormente otros frameworks para crear interfaces atractivas y funcionales.</p>
                     </div>
                 </div>
                 <div class="intereses">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Proyecto 2" class="imgInteres">
                     <div class="infoInteres">
-                        <h3>Inteligencia artificial y nuevas tecnologías</h3>
+                        <h3><img src="https://cdn-icons-png.flaticon.com/512/4712/4712139.png" alt="IA" class="icon-mediano">Inteligencia artificial y nuevas tecnologías</h3>
                         <p>Me motiva conocer las tendencias que están transformando el mundo tecnológico.</p>
                     </div>
                 </div>
                 <div class="intereses">
                     <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Proyecto 3" class="imgInteres">
                     <div class="infoInteres">
-                        <h3>Software educativo</h3>
+                        <h3><img src="https://cdn-icons-png.flaticon.com/512/3074/3074767.png" alt="Educación" class="icon-mediano">Software educativo</h3>
                         <p>Me interesa cómo la tecnología puede apoyar los procesos de enseñanza y aprendizaje.</p>
                     </div>
                 </div>
@@ -113,10 +120,11 @@
     <!-- Educacion -->
     <section id="educacion" class="educacion">
         <div class="container">
-            <h2>Mi Educación</h2>
+            <h2><img src="https://cdn-icons-png.flaticon.com/512/3074/3074058.png" alt="Educación" class="icon-mediano">Mi Educación</h2>
             <div class="containerEducacion">
                 <div class="educacionItem">
                     <div class="educacionIcon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/201/201634.png" alt="Universidad" class="icon-grande">
                     </div>
                     <div class="infoEducacion">
                         <h3>Ingeniería de Sistemas</h3>
@@ -126,6 +134,7 @@
                 </div>
                 <div class="educacionItem">
                     <div class="educationIcon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3656/3656988.png" alt="Bachiller" class="icon-grande">
                     </div>
                     <div class="infoEducation">
                         <h3>Bachiller Técnico</h3>
@@ -135,6 +144,7 @@
                 </div>
                 <div class="educacionItem">
                     <div class="educationIcon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png" alt="Técnico" class="icon-grande">
                     </div>
                     <div class="infoEducacion">
                         <h3>Técnico en Sistemas y Computación</h3>
@@ -149,24 +159,24 @@
     <!-- Contacto -->
     <section id="contacto" class="contacto">
         <div class="container">
-            <h2>Contacto</h2>
+            <h2><img src="https://cdn-icons-png.flaticon.com/512/126/126341.png" alt="Contacto" class="icon-mediano">Contacto</h2>
             <div class="containerContacto">
                 <div class="infoContacto">
                     <div class="contactoItem">
                         <div>
-                            <h3>Email</h3>
+                            <h3><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" class="icon">Email</h3>
                             <p>v.sanjuan@udla.edu.co</p>
                         </div>
                     </div>
                     <div class="contactoItem">
                         <div>
-                            <h3>Teléfono</h3>
+                            <h3><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Teléfono" class="icon">Teléfono</h3>
                             <p>+57 311 579 6161</p>
                         </div>
                     </div>
                     <div class="contactoItem">
                         <div>
-                            <h3>Ubicación</h3>
+                            <h3><img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Ubicación" class="icon">Ubicación</h3>
                             <p>Florencia-Caquetá, Colombia</p>
                         </div>
                     </div>
@@ -176,7 +186,7 @@
                         <input type="text" placeholder="Nombre completo" required>
                         <input type="email" placeholder="Correo electrónico" required>
                         <textarea placeholder="Tu mensaje" required></textarea>
-                        <button type="submit" class="btn">Enviar mensaje</button>
+                        <button type="submit" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/3682/3682321.png" alt="Enviar" class="icon">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
@@ -188,10 +198,18 @@
     <footer>
         <div class="container">
             <div class="linksRedes">
-                <a href="https://www.instagram.com/by_valentt/"target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://open.spotify.com/user/7wdvo1lo7oej788cfrhapl0vy?si=93541875537540ba"><i class="fab fa-spotify"></i></a>
-                <a href="https://www.tiktok.com/@sorry.mazamorry"><i class="fab fa-tiktok"></i></a>
-                <a href="https://github.com/ValentinaSanjuan"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/by_valentt/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4138/4138164.png" alt="Instagram" class="redes-icon">
+                </a>
+                <a href="https://open.spotify.com/user/7wdvo1lo7oej788cfrhapl0vy?si=93541875537540ba">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111685.png" alt="Spotify" class="redes-icon">
+                </a>
+                <a href="https://www.tiktok.com/@sorry.mazamorry">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3669/3669950.png" alt="TikTok" class="redes-icon">
+                </a>
+                <a href="https://github.com/ValentinaSanjuan">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="redes-icon">
+                </a>
             </div>
             <p>&copy; 2025 Valentina Sanjuan. Todos los derechos reservados.</p>
         </div>

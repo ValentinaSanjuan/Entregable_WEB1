@@ -92,6 +92,7 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .headerContainer {
@@ -138,14 +139,28 @@ nav ul li a:hover {
 .fotico {
     padding-top: 150px;
     padding-bottom: 100px;
-    background: linear-gradient(135deg, #315276 0%, #348998 100%);
+    background-color: #2c3e5000;
     color: white;
     text-align: center;
+    background-image: url("/img/13\ sin\ título_20250826220552.jpg");
+    background-size: cover;        
+    background-position: center;     
+    background-repeat: no-repeat;    
+    background-attachment: fixed; 
+
+
 }
 
+#atras{
+    height: 100%;
+    width: 100%;
+    
+}
 .foticoContainer {
     max-width: 100%;
     margin: 0 auto;
+    
+    
 }
 
 .fotico h1 {
@@ -161,13 +176,14 @@ nav ul li a:hover {
 }
 
 .fotico-img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--secondary);
     margin-bottom: 30px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    filter: brightness(100%);
 }
 
 /* Sobre mi */
@@ -369,10 +385,66 @@ footer {
     transform: translateY(-5px);
 }
 
-/* Responsividad */
+/* Estilos para iconos */
+.icon {
+    width: 23px;
+    height: 23px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.icon-grande {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.icon-mediano {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.redes-icon {
+    width: 39px;
+    height: 39px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+h2 .icon, h3 .icon {
+    margin-right: 12px;
+}
+
+nav .icon {
+    margin-right: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    text-decoration: none;
+    color: #333;
+    margin-left: auto;
+}
+
+
+.menu-checkbox {
+    display: none;
+}
+
 @media (max-width: 992px) {
+    
     header{
-        position: inherit;
+        position: relative;
     }
     .fotico h1 {
         font-size: 2.8rem;
@@ -384,8 +456,50 @@ footer {
     
     .containerContacto {
         flex-direction: column;
+    } .menu-toggle {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--dark  );
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .menu-checkbox:checked ~ nav ul {
+        display: flex;
+    }
+    
+    nav ul li {
+        border-bottom: 1px solid #eee;
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    
+    nav ul li a {
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul li a:hover {
+        background-color: #ffffff;
+    }
+    
+    .headerContainer {
+        position: relative;
     }
 }
+
 
 
 @media (max-width: 768px) {
@@ -426,6 +540,9 @@ footer {
     
     .linksRedes {
         flex-wrap: wrap;
+    }
+    .menu-toggle{
+        margin-left: 0%;
     }
 }
 
